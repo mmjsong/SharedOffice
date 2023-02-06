@@ -1,0 +1,90 @@
+server:
+  port: 8088
+
+---
+
+spring:
+  profiles: default
+  cloud:
+    gateway:
+      routes:
+        - id: office
+          uri: http://localhost:8081
+          predicates:
+            - Path=/offices/**, /reviews/**, 
+        - id: reservation
+          uri: http://localhost:8082
+          predicates:
+            - Path=/reservations/**, 
+        - id: payment
+          uri: http://localhost:8083
+          predicates:
+            - Path=/payments/**, 
+        - id: message
+          uri: http://localhost:8084
+          predicates:
+            - Path=/notifications/**, 
+        - id: viewpage
+          uri: http://localhost:8085
+          predicates:
+            - Path=, /officeviews/**
+        - id: frontend
+          uri: http://localhost:8080
+          predicates:
+            - Path=/**
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "*"
+            allowedMethods:
+              - "*"
+            allowedHeaders:
+              - "*"
+            allowCredentials: true
+
+
+---
+
+spring:
+  profiles: docker
+  cloud:
+    gateway:
+      routes:
+        - id: office
+          uri: http://office:8080
+          predicates:
+            - Path=/offices/**, /reviews/**, 
+        - id: reservation
+          uri: http://reservation:8080
+          predicates:
+            - Path=/reservations/**, 
+        - id: payment
+          uri: http://payment:8080
+          predicates:
+            - Path=/payments/**, 
+        - id: message
+          uri: http://message:8080
+          predicates:
+            - Path=/notifications/**, 
+        - id: viewpage
+          uri: http://viewpage:8080
+          predicates:
+            - Path=, /officeviews/**
+        - id: frontend
+          uri: http://frontend:8080
+          predicates:
+            - Path=/**
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "*"
+            allowedMethods:
+              - "*"
+            allowedHeaders:
+              - "*"
+            allowCredentials: true
+
+server:
+  port: 8080
