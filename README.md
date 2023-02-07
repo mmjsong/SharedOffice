@@ -1,97 +1,73 @@
-# 
+# 공유오피스
 
-## Model
-www.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
+본 예제는 MSA/DDD/Event Storming/EDA 를 포괄하는 분석/설계/구현/운영 전단계를 커버하도록 구성한 예제입니다. 이는 클라우드 네이티브 애플리케이션의 개발에 요구되는 체크포인트들을 통과하기 위한 예시 답안을 포함합니다.
 
-## Before Running Services
-### Make sure there is a Kafka server running
-```
-cd kafka
-docker-compose up
-```
-- Check the Kafka messages:
-```
-cd kafka
-docker-compose exec -it kafka /bin/bash
-cd /bin
-./kafka-console-consumer --bootstrap-server localhost:9092 --topic
-```
+# 서비스 시나리오
 
-## Run the backend micro-services
-See the README.md files inside the each microservices directory:
+## 기능적 요구사항
 
-- office
-- reservation
-- payment
-- message
-- viewpage
+1. 운영자가 대여할 회의실을 등록/수정/삭제한다.
 
+2. 고객이 회의실을 선택하여 예약한다.
 
-## Run API Gateway (Spring Gateway)
-```
-cd gateway
-mvn spring-boot:run
-```
+3. 예약과 동시에 결제가 진행된다.
 
-## Test by API
-- office
-```
- http :8088/offices officeId="officeId" status="status" desc="desc" reviewCnt="reviewCnt" lastAction="lastAction" 
- http :8088/reviews reviewId="reviewId" officeId="officeId" content="content" 
-```
-- reservation
-```
- http :8088/reservations rsvId="rsvId" officeId="officeId" status="status" payId="payId" 
-```
-- payment
-```
- http :8088/payments payId="payId" rsvId="rsvId" officeId="officeId" status="status" 
-```
-- message
-```
- http :8088/notifications msgId="msgId" rsvId="rsvId" sendDate="sendDate" content="content" officeId="officeId" 
-```
-- viewpage
-```
-```
+4. 예약이 되면 예약 내역(Message)이 전달된다.
 
+5. 고객이 예약을 취소할 수 있다.
 
-## Run the frontend
-```
-cd frontend
-npm i
-npm run serve
-```
+6. 예약 사항이 취소될 경우 취소 내역(Message)이 전달된다.
 
-## Test by UI
-Open a browser to localhost:8088
+7. 회의실에 후기(review)를 남길 수 있다.
 
-## Required Utilities
+8. 전체적인 회의실에 대한 정보 및 예약 상태 등을 한 화면에서 확인 할 수 있다.(viewpage)
 
-- httpie (alternative for curl / POSTMAN) and network utils
-```
-sudo apt-get update
-sudo apt-get install net-tools
-sudo apt install iputils-ping
-pip install httpie
-```
+## 비기능적 요구사항
 
-- kubernetes utilities (kubectl)
-```
-curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
-sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
-```
+### 1. 트랜잭션
 
-- aws cli (aws)
-```
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-unzip awscliv2.zip
-sudo ./aws/install
-```
+결제가 되지 않은 예약 건은 성립되지 않아야 한다. (Sync 호출)
 
-- eksctl 
-```
-curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
-sudo mv /tmp/eksctl /usr/local/bin
-```
+### 2. 장애격리
 
+회의실 등록 및 메시지 전송 기능이 수행되지 않더라도 예약은 365일 24시간 받을 수 있어야 한다 Async (event-driven), Eventual Consistency
+
+예약 시스템이 과중되면 사용자를 잠시동안 받지 않고 잠시 후에 하도록 유도한다 Circuit breaker, fallback
+
+### 3. 성능
+
+모든 회의실에 대한 정보 및 예약 상태 등을 한번에 확인할 수 있어야 한다 (CQRS)
+
+예약의 상태가 바뀔 때마다 메시지로 알림을 줄 수 있어야 한다 (Event driven)
+
+## Event Storming 결과
+
+# 구현
+
+## **1. Saga (Pub-Sub)**
+
+## 2**. CQRS**
+
+## 3. **Compensation & Correlation**
+
+4. **Request-Response (Not implemented)**
+
+5. **Circuit Breaker (Not implemented)**
+
+# 운영
+
+## 6. **Gateway / Ingress**
+
+## 7. **Deploy / Pipeline**
+
+## 8. **Autoscale (HPA)**
+
+## 9. **Zero-downtime deploy (Readiness probe)**
+
+## 10. **Persistence Volume/ConfigMap/Secret**
+
+## 11. **Self-healing (liveness probe)**
+
+## 12. **Apply Service Messh**
+
+## 13. **Loggregation / Monitoring**
