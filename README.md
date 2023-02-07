@@ -72,9 +72,10 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 
 # 운영
 
+
 ## 6. **Gateway / Ingress**
 - gateway 스프링부트 App을 추가 후 application.yaml내에 각 마이크로 서비스의 routes 를 추가하고 gateway 서버의 포트를 8080 으로 설정함
-  ![image](https://user-images.githubusercontent.com/110404800/217168094-b1b93972-7180-4c95-b21c-4666692bc5c5.png)
+    ![image](https://user-images.githubusercontent.com/110404800/217168094-b1b93972-7180-4c95-b21c-4666692bc5c5.png)
 
 ## 7. **Deploy / Pipeline**
 
