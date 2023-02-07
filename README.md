@@ -63,6 +63,8 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 
 ![image](https://user-images.githubusercontent.com/110404800/217181247-0683ccc6-f6d3-495d-bed4-cd8570a2ae87.png)
 
+- kafka client 확인 (예약 confrim)
+  ![image](https://user-images.githubusercontent.com/110404800/217182228-8e2684c4-cf4b-4e35-8f96-2257640d7fc3.png)
 
 
 ## 2**. CQRS**
