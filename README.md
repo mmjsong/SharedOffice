@@ -49,14 +49,14 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 
 ## **1. Saga (Pub-Sub)**
 - reservation 예약 신청(POST)   
+  ![image](https://user-images.githubusercontent.com/110404800/217293251-6c8f76f0-abad-4bc1-afab-e452c220ab0e.png)  
   
 - reservation 예약 확인  
+  ![image](https://user-images.githubusercontent.com/110404800/217293405-1cdd503f-e79b-4df3-b31c-fb989a14d3d7.png)  
   
 - 예약신청 후 payment확인  
 
 
-![image](https://user-images.githubusercontent.com/110404800/217180959-89714891-c155-4cef-b8fc-8c75f8a65c30.png)
-![image](https://user-images.githubusercontent.com/110404800/217181185-6ca9e498-95a3-40d1-83ac-74914e06da01.png)
 ![image](https://user-images.githubusercontent.com/110404800/217181247-0683ccc6-f6d3-495d-bed4-cd8570a2ae87.png)
 
 - kafka client 확인 (예약 confrim)  
