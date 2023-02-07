@@ -57,7 +57,12 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 
 - 고객이 예약 취소 후 상태
 
-- 
+![image](https://user-images.githubusercontent.com/110404800/217180959-89714891-c155-4cef-b8fc-8c75f8a65c30.png)
+
+![image](https://user-images.githubusercontent.com/110404800/217181185-6ca9e498-95a3-40d1-83ac-74914e06da01.png)
+
+![image](https://user-images.githubusercontent.com/110404800/217181247-0683ccc6-f6d3-495d-bed4-cd8570a2ae87.png)
+
 
 
 ## 2**. CQRS**
