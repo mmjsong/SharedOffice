@@ -72,6 +72,8 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 - 예약취소
 ![image](https://user-images.githubusercontent.com/110404800/217183878-9030dfab-1f4c-4dbd-9af4-5212e170a83d.png)
 ![image](https://user-images.githubusercontent.com/110404800/217183913-39a7323c-d762-49bc-b738-dbf3289a348e.png)
+
+- kafka client 확인 (예약취소)  
 ![image](https://user-images.githubusercontent.com/110404800/217183960-05e8cef5-4d05-4e60-82b7-53f3b60a63d1.png)
 
 
