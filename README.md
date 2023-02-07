@@ -41,6 +41,8 @@
 예약의 상태가 바뀔 때마다 메시지로 알림을 줄 수 있어야 한다 (Event driven)
 
 ## Event Storming 결과
+https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
+
 
 # 구현
 
