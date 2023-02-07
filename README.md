@@ -86,8 +86,8 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 5. **Circuit Breaker (Not implemented)**
 
 
-- 마이크로서비스 docker image 빌드 및 push
-  ![image](https://user-images.githubusercontent.com/110404800/217187118-1d2ca7c5-2e12-4740-b3f4-8defac86f7a7.png)
+- 마이크로서비스 docker image 빌드 및 push  
+  ![image](https://user-images.githubusercontent.com/110404800/217187118-1d2ca7c5-2e12-4740-b3f4-8defac86f7a7.png)  
   ![image](https://user-images.githubusercontent.com/110404800/217189910-56deef09-d9d1-4868-9efa-5033963e4f07.png)
   
   
