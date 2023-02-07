@@ -53,8 +53,8 @@ public class Payment  {
 
 
 
-        PaymentCancelled paymentCancelled = new PaymentCancelled(this);
-        paymentCancelled.publishAfterCommit();
+        // PaymentCancelled paymentCancelled = new PaymentCancelled(this);
+        // paymentCancelled.publishAfterCommit();
 
     }
 

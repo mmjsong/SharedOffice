@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: office
-          image: username/office:latest
+          image: inursummer/office:v1/
           ports:
             - containerPort: 8080
           readinessProbe:

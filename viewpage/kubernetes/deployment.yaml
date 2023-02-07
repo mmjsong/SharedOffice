@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: viewpage
-          image: username/viewpage:latest
+          image: inursummer/viewpage:v1
           ports:
             - containerPort: 8080
           readinessProbe:

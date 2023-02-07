@@ -42,35 +42,29 @@ public class Reservation  {
     @PostPersist
     public void onPostPersist(){
 
-        //Following code causes dependency to external APIs
-        // it is NOT A GOOD PRACTICE. instead, Event-Policy mapping is recommended.
 
-
-        sharedoffice.external.Office office = new sharedoffice.external.Office();
+        sharedoffice.external.Payment payment = new sharedoffice.external.Payment();
         // mappings goes here
-        ReservationApplication.applicationContext.getBean(sharedoffice.external.OfficeService.class)
-            .chkAndReqReserve(office);
+        payment.setRsvId(this.getRsvId());
+        payment.setStatus(this.getStatus());
 
+        ReservationApplication.applicationContext
+            .getBean(sharedoffice.external.PaymentService.class)
+            .approvePayment(payment);
 
-        ReservationCreated reservationCreated = new ReservationCreated(this);
-        
+        ReservationCreated reservationCreated = new ReservationCreated(this);        
         reservationCreated.publishAfterCommit();
 
 
 
-        ReservationCacelRequested reservationCacelRequested = new ReservationCacelRequested(this);
-        reservationCacelRequested.publishAfterCommit();
+    }
 
-
-
-        ReservationConfirmed reservationConfirmed = new ReservationConfirmed(this);
-        reservationConfirmed.publishAfterCommit();
-
-
-
-        ReservationCancelled reservationCancelled = new ReservationCancelled(this);
-        reservationCancelled.publishAfterCommit();
-
+    @PostUpdate
+    public void onPostUpdate(){
+        if (!this.getStatus().equals("예약완료")) {
+            ReservationCacelRequested reservationCacelRequested = new ReservationCacelRequested(this);
+            reservationCacelRequested.publishAfterCommit();
+        }
     }
 
     public static ReservationRepository repository(){
@@ -102,6 +96,16 @@ public class Reservation  {
          });
         */
 
+        repository().findById(paymentApproved.getRsvId()).ifPresent(reservation->{
+            reservation.setStatus("예약완료");
+            reservation.setRsvId(paymentApproved.getRsvId());
+            reservation.setOfficeId(paymentApproved.getOfficeId());
+            repository().save(reservation);
+             
+            ReservationConfirmed reservationConfirmed = new ReservationConfirmed(reservation);
+            reservationConfirmed.publishAfterCommit();
+         });
+
         
     }
     public static void confirmCancel(PaymentCancelled paymentCancelled){
@@ -118,24 +122,27 @@ public class Reservation  {
         // res.setOfficeId(paymentCancelled.getOfficeId());
         // res.setStatus("취소완료");
 
-        /** Example 2:  finding and process
+        /** Example 2:  finding and process */
         
-        repository().findById(paymentCancelled.get???()).ifPresent(reservation->{
+        // repository().findById(paymentCancelled.getRsvId()).ifPresent(reservation->{
             
-            reservation // do something
-            repository().save(reservation);
+        //     reservation // do something
+        //     repository().save(reservation);
 
 
-         });
-        */
+        //  });
+        
 
-        repository().findById(paymentCancelled.getPayId()).ifPresent(reservation->{
+        repository().findById(paymentCancelled.getRsvId()).ifPresent(reservation->{
             System.out.println("\n\n############### 취소 #########" + reservation.toString());
             reservation.setStatus("취소완료");
             reservation.setRsvId(paymentCancelled.getRsvId());
             reservation.setOfficeId(paymentCancelled.getOfficeId());
             repository().save(reservation);
              
+
+            ReservationCancelled reservationCancelled = new ReservationCancelled(reservation);
+            reservationCancelled.publishAfterCommit();
 
          });
 

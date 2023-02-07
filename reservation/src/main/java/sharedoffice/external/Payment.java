@@ -5,8 +5,8 @@ import java.util.Date;
 @Data
 public class Payment {
 
-    private String payId;
-    private String rsvId;
+    private Long payId;
+    private Long rsvId;
     private String officeId;
     private String status;
 }
