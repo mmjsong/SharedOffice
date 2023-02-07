@@ -99,6 +99,8 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
   ![image](https://user-images.githubusercontent.com/110404800/217177210-e416b6e4-d290-41bf-9adc-479cbeaf4e3f.png)
 - Kubernetes용 Deployment.yaml 을 작성하고 Kubernetes에 Deploy를 생성  
   ![image](https://user-images.githubusercontent.com/110404800/217177485-396da718-ab7c-40c6-8533-975126ee9122.png)
+- 생성된 Deploy 확인  
+  ![image](https://user-images.githubusercontent.com/110404800/217283758-c343d1df-3940-4365-9b82-26b1ba0ed5ed.png)
 
 
 ## 7. **Deploy / Pipeline**
