@@ -85,6 +85,12 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 
 5. **Circuit Breaker (Not implemented)**
 
+
+- 마이크로서비스 docker image 빌드 및 push
+  ![image](https://user-images.githubusercontent.com/110404800/217187118-1d2ca7c5-2e12-4740-b3f4-8defac86f7a7.png)
+  ![image](https://user-images.githubusercontent.com/110404800/217189910-56deef09-d9d1-4868-9efa-5033963e4f07.png)
+  
+  
 # 운영
 
 
@@ -93,7 +99,7 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
   ![image](https://user-images.githubusercontent.com/110404800/217177210-e416b6e4-d290-41bf-9adc-479cbeaf4e3f.png)
 - Kubernetes용 Deployment.yaml 을 작성하고 Kubernetes에 Deploy를 생성  
   ![image](https://user-images.githubusercontent.com/110404800/217177485-396da718-ab7c-40c6-8533-975126ee9122.png)
-  
+
 
 ## 7. **Deploy / Pipeline**
 
