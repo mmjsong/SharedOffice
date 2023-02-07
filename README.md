@@ -55,12 +55,10 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
   ![image](https://user-images.githubusercontent.com/110404800/217293405-1cdd503f-e79b-4df3-b31c-fb989a14d3d7.png)  
   
 - 예약신청 후 payment확인  
-
-
-![image](https://user-images.githubusercontent.com/110404800/217181247-0683ccc6-f6d3-495d-bed4-cd8570a2ae87.png)
+  ![image](https://user-images.githubusercontent.com/110404800/217293812-045b3c6e-8b4a-44c6-a5ec-31a23581052e.png)  
 
 - kafka client 확인 (예약 confrim)  
-  ![image](https://user-images.githubusercontent.com/110404800/217182228-8e2684c4-cf4b-4e35-8f96-2257640d7fc3.png)
+  ![image](https://user-images.githubusercontent.com/110404800/217182228-8e2684c4-cf4b-4e35-8f96-2257640d7fc3.png)  
 
 - 예약신청(POST)  
   ![image](https://user-images.githubusercontent.com/110404800/217183342-00a6f199-7896-4ad1-a41a-076d1fa1fb1b.png)
