@@ -49,12 +49,10 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 
 ## **1. Saga (Pub-Sub)**
 
-- 고객이 예약 Post 후 상태
-
+- 고객이 예약 Post 후 상태  
 ![B6EE69C2-F1BB-4BEE-9EBD-10B5A91C7546](https://user-images.githubusercontent.com/110404800/217155674-56bf206d-2b75-47f0-9e91-e761c7968241.png)
 
-- 예약 확인
-
+- 예약 확인  
 ![6C1D5B8C-CF3E-419C-8AAE-7570D60AB469](https://user-images.githubusercontent.com/110404800/217157122-42712965-f3ea-4934-8cd5-9dc83f013286.png)
 
 - 고객이 예약 취소 후 상태
@@ -74,8 +72,8 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 
 
 ## 6. **Gateway / Ingress**
-- gateway 스프링부트 App을 추가 후 application.yaml내에 각 마이크로 서비스의 routes 를 추가하고 gateway 서버의 포트를 8080 으로 설정함
-    ![image](https://user-images.githubusercontent.com/110404800/217168094-b1b93972-7180-4c95-b21c-4666692bc5c5.png)
+- gateway 스프링부트 App을 추가 후 application.yaml내에 각 마이크로 서비스의 routes 를 추가하고 gateway 서버의 포트를 8080 으로 설정함  
+  ![image](https://user-images.githubusercontent.com/110404800/217168094-b1b93972-7180-4c95-b21c-4666692bc5c5.png)
 
 ## 7. **Deploy / Pipeline**
 
