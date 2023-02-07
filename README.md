@@ -49,34 +49,28 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 
 ## **1. Saga (Pub-Sub)**
 - reservation 예약 신청(POST)   
-  ![image](https://user-images.githubusercontent.com/110404800/217291201-24debea9-c5f8-466c-bf83-552114d8f8f1.png)
   
 - reservation 예약 확인  
-  ![6C1D5B8C-CF3E-419C-8AAE-7570D60AB469](https://user-images.githubusercontent.com/110404800/217157122-42712965-f3ea-4934-8cd5-9dc83f013286.png)
-  ![image](https://user-images.githubusercontent.com/110404800/217291371-da156983-f8a4-432a-ae17-7670d2aa8a63.png)
   
 - 예약신청 후 payment확인  
-  ![image](https://user-images.githubusercontent.com/110404800/217291777-7e2945ad-91b3-4d36-a724-9b8659900812.png)
 
 
 ![image](https://user-images.githubusercontent.com/110404800/217180959-89714891-c155-4cef-b8fc-8c75f8a65c30.png)
-
 ![image](https://user-images.githubusercontent.com/110404800/217181185-6ca9e498-95a3-40d1-83ac-74914e06da01.png)
-
 ![image](https://user-images.githubusercontent.com/110404800/217181247-0683ccc6-f6d3-495d-bed4-cd8570a2ae87.png)
 
 - kafka client 확인 (예약 confrim)  
   ![image](https://user-images.githubusercontent.com/110404800/217182228-8e2684c4-cf4b-4e35-8f96-2257640d7fc3.png)
 
-- 예약신청  
-![image](https://user-images.githubusercontent.com/110404800/217183342-00a6f199-7896-4ad1-a41a-076d1fa1fb1b.png)
+- 예약신청(POST)  
+  ![image](https://user-images.githubusercontent.com/110404800/217183342-00a6f199-7896-4ad1-a41a-076d1fa1fb1b.png)
 
 - 예약취소  
-![image](https://user-images.githubusercontent.com/110404800/217183878-9030dfab-1f4c-4dbd-9af4-5212e170a83d.png)
-![image](https://user-images.githubusercontent.com/110404800/217183913-39a7323c-d762-49bc-b738-dbf3289a348e.png)
+  ![image](https://user-images.githubusercontent.com/110404800/217183878-9030dfab-1f4c-4dbd-9af4-5212e170a83d.png)
+  ![image](https://user-images.githubusercontent.com/110404800/217183913-39a7323c-d762-49bc-b738-dbf3289a348e.png)
 
 - kafka client 확인 (예약취소)  
-![image](https://user-images.githubusercontent.com/110404800/217183960-05e8cef5-4d05-4e60-82b7-53f3b60a63d1.png)
+  ![image](https://user-images.githubusercontent.com/110404800/217183960-05e8cef5-4d05-4e60-82b7-53f3b60a63d1.png)
 
 
 ## 2**. CQRS**
