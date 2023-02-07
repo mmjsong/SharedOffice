@@ -12,4 +12,6 @@ public class PaymentApproved extends AbstractEvent {
     private String rsvId;
     private String officeId;
     private String status;
+
+    
 }

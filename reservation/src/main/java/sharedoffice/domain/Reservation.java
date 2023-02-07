@@ -26,7 +26,7 @@ public class Reservation  {
     
     
     
-    private Long rsvId;
+    private String rsvId;
     
     
     
@@ -60,6 +60,7 @@ public class Reservation  {
 
 
         ReservationCreated reservationCreated = new ReservationCreated(this);
+        
         reservationCreated.publishAfterCommit();
 
 
@@ -95,6 +96,8 @@ public class Reservation  {
 
         */
 
+       
+
         /** Example 2:  finding and process
         
         repository().findById(paymentApproved.get???()).ifPresent(reservation->{
@@ -116,6 +119,12 @@ public class Reservation  {
 
         */
 
+        Reservation res = new Reservation();
+        res.setRsvId(paymentCancelled.getRsvId());
+        res.setPayId(paymentCancelled.getPayId());
+        res.setOfficeId(paymentCancelled.getOfficeId());
+        res.setStatus("취소완료");
+
         /** Example 2:  finding and process
         
         repository().findById(paymentCancelled.get???()).ifPresent(reservation->{
@@ -126,6 +135,53 @@ public class Reservation  {
 
          });
         */
+
+        repository().findById(paymentCancelled.getPayId()).ifPresent(reservation->{
+            
+            reservation.setStatus("취소완료");
+            reservation.setRsvId(paymentCancelled.getRsvId());
+            reservation.setOfficeId(paymentCancelled.getOfficeId());
+            repository().save(reservation);
+
+
+         });
+
+        
+    }
+    public static void reservationCreated(ReservationCreated reserverationCreated){
+
+        /** Example 1:  new item 
+        Reservation reservation = new Reservation();
+        repository().save(reservation);
+
+        */
+
+        Reservation res = new Reservation();
+        res.setRsvId(reserverationCreated.getRsvId());
+        res.setPayId(reserverationCreated.getPayId());
+        res.setOfficeId(reserverationCreated.getOfficeId());
+        res.setStatus("요청완료");
+
+        /** Example 2:  finding and process
+        
+        repository().findById(paymentCancelled.get???()).ifPresent(reservation->{
+            
+            reservation // do something
+            repository().save(reservation);
+
+
+         });
+        */
+
+        repository().findById(reserverationCreated.getRsvId()).ifPresent(reservation->{
+            
+            reservation.setStatus("요청완료");
+            reservation.setRsvId(reservation.getRsvId());
+            reservation.setOfficeId(reservation.getOfficeId());
+            repository().save(reservation);
+
+
+         });
 
         
     }

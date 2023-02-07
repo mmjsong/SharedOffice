@@ -10,7 +10,7 @@ import lombok.*;
 @ToString
 public class ReservationCacelRequested extends AbstractEvent {
 
-    private Long rsvId;
+    private String rsvId;
     private String officeId;
     private String status;
     private String payId;

@@ -10,7 +10,7 @@ import lombok.*;
 @ToString
 public class ReviewDeleted extends AbstractEvent {
 
-    private Long reviewId;
+    private String reviewId;
     private String officeId;
     private String content;
 

@@ -73,6 +73,12 @@ public class Payment  {
         repository().save(payment);
 
         */
+        
+        Payment payment = new Payment();
+        payment.setRsvId(reservationCacelRequested.getRsvId());
+        payment.setPayId(reservationCacelRequested.getPayId());
+        payment.setStatus("결제취소");
+        repository().save(payment);
 
         /** Example 2:  finding and process
         
@@ -84,6 +90,13 @@ public class Payment  {
 
          });
         */
+
+        repository().findById(reservationCacelRequested.getRsvId()).ifPresent(cancelledPayment -> {
+            cancelledPayment.setStatus(reservationCacelRequested.getStatus());
+            cancelledPayment.setPayId(reservationCacelRequested.getPayId());
+            cancelledPayment.setRsvId(reservationCacelRequested.getRsvId());
+            repository().save(cancelledPayment);
+        });
 
         
     }

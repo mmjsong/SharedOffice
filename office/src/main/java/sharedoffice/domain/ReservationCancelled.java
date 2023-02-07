@@ -8,7 +8,7 @@ import java.util.*;
 @ToString
 public class ReservationCancelled extends AbstractEvent {
 
-    private Long rsvId;
+    private String rsvId;
     private String officeId;
     private String status;
     private String payId;

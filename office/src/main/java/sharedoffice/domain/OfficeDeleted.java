@@ -10,10 +10,10 @@ import lombok.*;
 @ToString
 public class OfficeDeleted extends AbstractEvent {
 
-    private Long officeId;
+    private String officeId;
     private String status;
     private String desc;
-    private String reviewCnt;
+    private int reviewCnt;
     private String lastAction;
 
     public OfficeDeleted(Office aggregate){

@@ -26,7 +26,7 @@ public class OfficeviewViewHandler {
             // view 객체 생성
             Officeview officeview = new Officeview();
             // view 객체에 이벤트의 Value 를 set 함
-            officeview.setOfficeId(Long.valueOf(reservationCreated.getOfficeId()));
+            officeview.setOfficeId(String.valueOf(reservationCreated.getOfficeId()));
             officeview.setRsvId(String.valueOf(reservationCreated.getRsvId()));
             officeview.setRsvStatus("예약신청");
             // view 레파지 토리에 save
@@ -44,7 +44,7 @@ public class OfficeviewViewHandler {
             if (!paymentApproved.validate()) return;
                 // view 객체 조회
 
-                List<Officeview> officeviewList = officeviewRepository.findByRsvId(paymentApproved.getRsvid());
+                List<Officeview> officeviewList = officeviewRepository.findByRsvId(paymentApproved.getRsvId());
                 for(Officeview officeview : officeviewList){
                     // view 객체에 이벤트의 eventDirectValue 를 set 함
                     officeview.setRsvStatus("예약완료");

@@ -13,9 +13,9 @@ public class Officeview {
 
         @Id
         //@GeneratedValue(strategy=GenerationType.AUTO)
-        private Long officeId;
-        private Integer desc;
-        private Date reviewCnt;
+        private String officeId;
+        private String desc;
+        private int reviewCnt;
         private String rsvId;
         private String rsvStatus;
         private String payId;
