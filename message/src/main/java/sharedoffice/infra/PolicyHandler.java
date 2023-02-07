@@ -15,7 +15,6 @@ import org.springframework.stereotype.Service;
 import sharedoffice.domain.*;
 
 @Service
-@Transactional
 public class PolicyHandler{
     @Autowired NotificationRepository notificationRepository;
     

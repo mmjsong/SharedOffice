@@ -10,7 +10,7 @@ import lombok.*;
 @ToString
 public class OfficeRegistered extends AbstractEvent {
 
-    private String officeId;
+    private Long officeId;
     private String status;
     private String desc;
     private int reviewCnt;

@@ -14,7 +14,6 @@ import javax.transaction.Transactional;
 
 @RestController
 // @RequestMapping(value="/offices")
-@Transactional
 public class OfficeController {
     @Autowired
     OfficeRepository officeRepository;

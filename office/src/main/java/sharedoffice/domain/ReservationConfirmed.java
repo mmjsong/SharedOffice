@@ -8,10 +8,10 @@ import java.util.*;
 @ToString
 public class ReservationConfirmed extends AbstractEvent {
 
-    private String rsvId;
-    private String officeId;
+    private Long rsvId;
+    private Long officeId;
     private String status;
-    private String payId;
+    private Long payId;
 }
 
 

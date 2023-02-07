@@ -27,7 +27,7 @@ public class Office  {
     
     
     
-    private String officeId;
+    private Long officeId;
     
     
     

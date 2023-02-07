@@ -10,8 +10,8 @@ import lombok.*;
 @ToString
 public class ReviewModified extends AbstractEvent {
 
-    private String reviewId;
-    private String officeId;
+    private Long reviewId;
+    private Long officeId;
     private String content;
 
     public ReviewModified(Review aggregate){

@@ -14,7 +14,6 @@ import javax.transaction.Transactional;
 
 @RestController
 // @RequestMapping(value="/notifications")
-@Transactional
 public class NotificationController {
     @Autowired
     NotificationRepository notificationRepository;

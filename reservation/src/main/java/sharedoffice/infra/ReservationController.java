@@ -14,7 +14,7 @@ import javax.transaction.Transactional;
 
 @RestController
 // @RequestMapping(value="/reservations")
-@Transactional
+
 public class ReservationController {
     @Autowired
     ReservationRepository reservationRepository;

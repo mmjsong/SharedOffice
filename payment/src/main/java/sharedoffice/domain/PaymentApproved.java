@@ -10,8 +10,8 @@ import lombok.*;
 @ToString
 public class PaymentApproved extends AbstractEvent {
 
-    private String payId;
-    private String rsvId;
+    private Long payId;
+    private Long rsvId;
     private String officeId;
     private String status;
 

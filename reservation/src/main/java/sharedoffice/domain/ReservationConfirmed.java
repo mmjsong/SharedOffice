@@ -10,10 +10,10 @@ import lombok.*;
 @ToString
 public class ReservationConfirmed extends AbstractEvent {
 
-    private String rsvId;
+    private Long rsvId;
     private String officeId;
     private String status;
-    private String payId;
+    private Long payId;
 
     public ReservationConfirmed(Reservation aggregate){
         super(aggregate);

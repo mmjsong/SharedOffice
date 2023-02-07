@@ -14,7 +14,6 @@ import javax.transaction.Transactional;
 
 @RestController
 // @RequestMapping(value="/reviews")
-@Transactional
 public class ReviewController {
     @Autowired
     ReviewRepository reviewRepository;

@@ -25,7 +25,7 @@ public class Review  {
     
     
     
-    private String reviewId;
+    private Long reviewId;
     
     
     
