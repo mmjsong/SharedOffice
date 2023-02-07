@@ -46,6 +46,9 @@
 
 ## **1. Saga (Pub-Sub)**
 
+![B6EE69C2-F1BB-4BEE-9EBD-10B5A91C7546](https://user-images.githubusercontent.com/110404800/217155674-56bf206d-2b75-47f0-9e91-e761c7968241.png)
+
+
 ## 2**. CQRS**
 
 ## 3. **Compensation & Correlation**
