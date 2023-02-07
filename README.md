@@ -55,7 +55,8 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 - 예약 확인  
 ![6C1D5B8C-CF3E-419C-8AAE-7570D60AB469](https://user-images.githubusercontent.com/110404800/217157122-42712965-f3ea-4934-8cd5-9dc83f013286.png)
 
-- 고객이 예약 취소 후 상태
+- 고객이 예약 취소 후 상태  
+
 
 ![image](https://user-images.githubusercontent.com/110404800/217180959-89714891-c155-4cef-b8fc-8c75f8a65c30.png)
 
@@ -66,10 +67,10 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 - kafka client 확인 (예약 confrim)  
   ![image](https://user-images.githubusercontent.com/110404800/217182228-8e2684c4-cf4b-4e35-8f96-2257640d7fc3.png)
 
-- 예약신청
+- 예약신청  
 ![image](https://user-images.githubusercontent.com/110404800/217183342-00a6f199-7896-4ad1-a41a-076d1fa1fb1b.png)
 
-- 예약취소
+- 예약취소  
 ![image](https://user-images.githubusercontent.com/110404800/217183878-9030dfab-1f4c-4dbd-9af4-5212e170a83d.png)
 ![image](https://user-images.githubusercontent.com/110404800/217183913-39a7323c-d762-49bc-b738-dbf3289a348e.png)
 
@@ -95,13 +96,17 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 
 
 ## 6. **Gateway / Ingress**
-- gateway 스프링부트 App을 추가 후 application.yaml내에 각 마이크로 서비스의 routes 를 추가하고 gateway 서버의 포트를 8080 으로 설정함  
+- gateway 스프링부트 App을 추가 후 application.yaml내에 각 마이크로 서비스의 routes를 추가하고 gateway 서버의 포트를 8080으로 설정함  
   ![image](https://user-images.githubusercontent.com/110404800/217177210-e416b6e4-d290-41bf-9adc-479cbeaf4e3f.png)
 - Kubernetes용 Deployment.yaml 을 작성하고 Kubernetes에 Deploy를 생성  
   ![image](https://user-images.githubusercontent.com/110404800/217177485-396da718-ab7c-40c6-8533-975126ee9122.png)
 - 생성된 Deploy 확인  
-  ![image](https://user-images.githubusercontent.com/110404800/217283758-c343d1df-3940-4365-9b82-26b1ba0ed5ed.png)
-
+  ![image](https://user-images.githubusercontent.com/110404800/217284310-e31be71b-b8ee-4961-83c7-b397086ff466.png)
+- Kubernetes용 Service.yaml에서 Gateway 엔드포인트 확인 및 서비스 생성  
+  ![image](https://user-images.githubusercontent.com/110404800/217284942-36a5db28-47b5-482e-bb88-2e0ffe2f49ad.png)
+  
+  
+  
 
 ## 7. **Deploy / Pipeline**
 
