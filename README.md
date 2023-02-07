@@ -48,14 +48,15 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 # 구현
 
 ## **1. Saga (Pub-Sub)**
-
-- 고객이 예약 Post 후 상태  
-![B6EE69C2-F1BB-4BEE-9EBD-10B5A91C7546](https://user-images.githubusercontent.com/110404800/217155674-56bf206d-2b75-47f0-9e91-e761c7968241.png)
-
-- 예약 확인  
-![6C1D5B8C-CF3E-419C-8AAE-7570D60AB469](https://user-images.githubusercontent.com/110404800/217157122-42712965-f3ea-4934-8cd5-9dc83f013286.png)
-
-- 고객이 예약 취소 후 상태  
+- reservation 예약 신청(POST)   
+  ![image](https://user-images.githubusercontent.com/110404800/217291201-24debea9-c5f8-466c-bf83-552114d8f8f1.png)
+  
+- reservation 예약 확인  
+  ![6C1D5B8C-CF3E-419C-8AAE-7570D60AB469](https://user-images.githubusercontent.com/110404800/217157122-42712965-f3ea-4934-8cd5-9dc83f013286.png)
+  ![image](https://user-images.githubusercontent.com/110404800/217291371-da156983-f8a4-432a-ae17-7670d2aa8a63.png)
+  
+- 예약신청 후 payment확인  
+  ![image](https://user-images.githubusercontent.com/110404800/217291777-7e2945ad-91b3-4d36-a724-9b8659900812.png)
 
 
 ![image](https://user-images.githubusercontent.com/110404800/217180959-89714891-c155-4cef-b8fc-8c75f8a65c30.png)
