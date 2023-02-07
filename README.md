@@ -50,7 +50,6 @@
 ![B6EE69C2-F1BB-4BEE-9EBD-10B5A91C7546](https://user-images.githubusercontent.com/110404800/217155674-56bf206d-2b75-47f0-9e91-e761c7968241.png)
 
 - 예약 확인
-
 ![6C1D5B8C-CF3E-419C-8AAE-7570D60AB469](https://user-images.githubusercontent.com/110404800/217157122-42712965-f3ea-4934-8cd5-9dc83f013286.png)
 
 - 고객이 예약 취소 후 상태
