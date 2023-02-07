@@ -42,6 +42,7 @@
 
 ## Event Storming 결과
 https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
+![image](https://user-images.githubusercontent.com/110404800/217167811-8b93f630-db6e-455c-81cc-e66fd1de6c4a.png)
 
 
 # 구현
