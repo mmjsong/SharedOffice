@@ -67,13 +67,15 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
   ![image](https://user-images.githubusercontent.com/110404800/217183960-05e8cef5-4d05-4e60-82b7-53f3b60a63d1.png)  
 
 
-## **2. 2CQRS**
+## **2. CQRS**  
 
-## 3. **Compensation & Correlation**
 
-4. **Request-Response (Not implemented)**
+## 3. **Compensation & Correlation**  
 
-5. **Circuit Breaker (Not implemented)**
+
+---
+4. **Request-Response (Not implemented)**  
+5. **Circuit Breaker (Not implemented)**  
 
   
   
