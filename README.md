@@ -90,7 +90,7 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 - Kubernetes용 Deployment.yaml 을 작성하고 Kubernetes에 Deploy를 생성  
   ![image](https://user-images.githubusercontent.com/110404800/217177485-396da718-ab7c-40c6-8533-975126ee9122.png)
 - 생성된 Deploy 확인  
-  ![image](https://user-images.githubusercontent.com/110404800/217284310-e31be71b-b8ee-4961-83c7-b397086ff466.png)
+  ![image](https://user-images.githubusercontent.com/110404800/217402550-57caea70-5e93-4cbf-a771-a2180fe719d5.png)  
 - Kubernetes용 Service.yaml에서 Gateway 엔드포인트 확인 및 서비스 생성  
   ![image](https://user-images.githubusercontent.com/110404800/217284942-36a5db28-47b5-482e-bb88-2e0ffe2f49ad.png)
 - Service 및 API gateway 확인  
