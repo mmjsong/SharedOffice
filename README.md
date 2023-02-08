@@ -68,16 +68,13 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 
 
 ## **2. CQRS**  
-
+- Table 모델링 및 CQRS
+  ![image](https://user-images.githubusercontent.com/110404800/217440968-b277d362-9f52-46b9-b813-524b8994c569.png)  
+  ![image](https://user-images.githubusercontent.com/110404800/217441060-02024b1e-e177-42e3-9a51-2f5321f76afa.png)  
+  ![image](https://user-images.githubusercontent.com/110404800/217441096-4a6f0c99-d49e-4ad2-b1e5-7eef288bce28.png)  
 
 ## 3. **Compensation & Correlation**  
 
-
----
-4. **Request-Response (Not implemented)**  
-5. **Circuit Breaker (Not implemented)**  
-
-  
   
 # 운영
 
