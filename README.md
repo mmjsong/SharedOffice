@@ -143,6 +143,10 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 
 
 ## 10. **Persistence Volume/ConfigMap/Secret**
+- EFS 계정 생성 및 ROLE 바인딩 : efs-sa.yml, efs-rbac.yml  
+  ![BD4C0324-0EC6-4036-9B21-99E757942864](https://user-images.githubusercontent.com/110404800/217433267-99a8c172-84aa-4051-a1c5-aad56a91122d.png)  
+- 설치한 Provisioner를 storageclass에 등록 : efs-storageclass.yml  
+  ![250AF73F-AA9D-488F-BF39-0FFDB466559E](https://user-images.githubusercontent.com/110404800/217433472-86e7ef2f-b73e-43ce-99c0-4d89471b893f.png)  
 - PVC(PersistentVolumeClaim) 생성 : volume-pvc.yml  
   ![ABB713D9-0133-439C-9CA6-EF4992C06C4D](https://user-images.githubusercontent.com/110404800/217432594-3451f649-6f89-4e66-bc56-246b175ecef8.png)  
 - Pod 적용  
