@@ -153,7 +153,16 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
   ![4649C041-7917-466F-9C78-00BE4042DB69](https://user-images.githubusercontent.com/110404800/217432720-ecef4533-4f3a-4f6c-8860-8f3eb607077a.png)  
 
 ## 11. **Self-healing (liveness probe)**
+- Liveness Porbe가 주입된 deployment.yaml 배포  
+  ![image](https://user-images.githubusercontent.com/110404800/217439556-8bc77595-7204-40fd-9394-dd1419336506.png)  
+- Liveness Porbe 확인  
+  ![image](https://user-images.githubusercontent.com/110404800/217439807-7139dcba-19e2-493f-897f-96abcdabb4c5.png)  
+- 오류코드 날려보기  
+  ![image](https://user-images.githubusercontent.com/110404800/217439845-c23187b6-0e5c-4fd2-a135-4b37dc3385d9.png)  
+- 해당 pod description으로 Unhealthy 확인  
+  ![image](https://user-images.githubusercontent.com/110404800/217440045-f6b9c8b7-6c20-49af-ac02-653db7412d2f.png)  
 
+  
 ## 12. **Apply Service Messh**
 - istio default Namespace에 주입  
   ![2473E318-1A4D-4CB3-8234-C70B557EA797](https://user-images.githubusercontent.com/110404800/217438552-c1a4c1d9-3d5d-4442-9ba9-83d4559a35bf.png)  
