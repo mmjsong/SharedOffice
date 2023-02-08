@@ -108,10 +108,9 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 
 ## 8. **Autoscale (HPA)**
 - reservation 서비스에 대해 cpu 사용률 초과시 replicat를 10개까지 늘려준다
-- 
 ![image](https://user-images.githubusercontent.com/119907065/217411470-c2cee327-c233-49d0-a771-dcc80e86f211.png)
-
 ![image](https://user-images.githubusercontent.com/119907065/217411863-b489ddc3-eb8e-4569-a020-082528b3cc42.png)
+
 - 부하생성
 
 ![image](https://user-images.githubusercontent.com/119907065/217412080-da0d68c2-cae7-4b62-8d66-94ffb0512317.png)
