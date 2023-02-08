@@ -123,6 +123,19 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 
 
 ## 9. **Zero-downtime deploy (Readiness probe)**
+- readiness 설정 제거 후 siege 모니터링 및 배포 시작
+- Availability 가 100% 미만으로 떨어졌는지 확인
+![image](https://user-images.githubusercontent.com/119907065/217418607-3f50a345-2fbc-4b72-984e-ce59ed4d904b.png)
+
+- 배포기간중 Availability 가 평소 100%에서 83% 대로 떨어지는 것을 확인. 원인은 쿠버네티스가 성급하게 새로 올려진 서비스를 READY 상태로 인식하여 서비스 유입을 진행한 것이기 때문. 이를 막기위해 Readiness Probe 를 설정함
+
+- deployment.yaml 의 readiness probe 의 설정
+![image](https://user-images.githubusercontent.com/119907065/217418801-505254c7-11f2-4ee3-a921-b1b6282c3fef.png)
+
+- 동일한 시나리오로 재배포 한 후 Availability 확인
+![image](https://user-images.githubusercontent.com/119907065/217419386-a2b61461-4714-48bc-a74f-8105a8385fdc.png)
+
+배포기간 동안 Availability 가 변화없기 때문에 무정지 재배포가 성공한 것으로 확인됨.
 
 ## 10. **Persistence Volume/ConfigMap/Secret**
 
