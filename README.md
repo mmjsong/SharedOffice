@@ -159,8 +159,7 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
   ![2473E318-1A4D-4CB3-8234-C70B557EA797](https://user-images.githubusercontent.com/110404800/217438552-c1a4c1d9-3d5d-4442-9ba9-83d4559a35bf.png)  
 - 각 서비스에 사이드 카 생성  
   ![DADA5790-9FE2-4B64-A467-6A465F2A9C6E](https://user-images.githubusercontent.com/110404800/217438727-33f21ca4-16ed-4e78-9f2f-98ccf382f062.png)  
-  ![DADA5790-9FE2-4B64-A467-6A465F2A9C6E](https://user-images.githubusercontent.com/110404800/217438860-65811c67-2b2b-48ac-b5b4-c8b14b67283a.png)  
-  
+  ![19FB2DB4-80CB-4914-BD30-AD511EE8485A](https://user-images.githubusercontent.com/110404800/217439150-0f95b71b-5fe2-4e81-99c4-979e32169528.png)  
 
 ## 13. **Loggregation / Monitoring**
 - 모니터링을 위해 prometheus와 grafana를 설치  
