@@ -98,7 +98,8 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 ## 7. **Deploy / Pipeline**  
 - docker image 빌드 및 push  
   ![image](https://user-images.githubusercontent.com/110404800/217187118-1d2ca7c5-2e12-4740-b3f4-8defac86f7a7.png)  
-  ![image](https://user-images.githubusercontent.com/110404800/217189910-56deef09-d9d1-4868-9efa-5033963e4f07.png)  
+  ![image](https://user-images.githubusercontent.com/110404800/217408607-f4baa1e9-c67b-4e89-8d0c-386209baf89b.png)  
+- 
   
 
 ## 8. **Autoscale (HPA)**
