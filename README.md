@@ -117,9 +117,9 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 ## 12. **Apply Service Messh**
 
 ## 13. **Loggregation / Monitoring**
-- ??  
+- 모니터링을 위해 prometheus와 grafana를 설치  
   ![1A5A1270-6C97-4B0D-9ED9-525C6C5B6A99](https://user-images.githubusercontent.com/110404800/217410342-6c299363-00f7-4d18-98c4-aa5fe503b3cc.png)  
-- ??  
+- prometheus page로 이동하여 destination service 가 reservation로 request 한것을 query  
   ![625D1D89-8288-49DA-B6EA-947C0F908257](https://user-images.githubusercontent.com/110404800/217410403-43d619e5-0748-437f-a84e-6fd00d559b13.png)  
-- ??  
+- 의 내용을 grapana의 panel에 추가하여 종합적으로 모니터링 할 수 있도록 변경  
   ![B60203D4-FE46-45CF-B582-01EF0D5155A6](https://user-images.githubusercontent.com/110404800/217410467-c543e9fb-05dd-478c-83ce-9b438ba45f4a.png)  
