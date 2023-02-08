@@ -109,6 +109,7 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 
 ## 8. **Autoscale (HPA)**
 - reservation 서비스에 대해 replica 를 동적으로 늘려주도록 HPA를 설정한다. 설정은 CPU 사용량이 10프로를 넘어서면 replica를 10개까지 늘려준다.
+ 
  kubectl autoscale deployment room -n airbnb --cpu-percent=50 --min=1 --max=10
 
 ![image](https://user-images.githubusercontent.com/119907065/217411470-c2cee327-c233-49d0-a771-dcc80e86f211.png)
