@@ -142,7 +142,7 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 배포기간 동안 Availability 가 변화없기 때문에 무정지 재배포가 성공한 것으로 확인됨.
 
 
-## 10. **Persistence Volume/ConfigMap/Secret**
+## 10. **Persistence Volume**
 - EFS 계정 생성 및 ROLE 바인딩 : efs-sa.yml, efs-rbac.yml  
   ![BD4C0324-0EC6-4036-9B21-99E757942864](https://user-images.githubusercontent.com/110404800/217433267-99a8c172-84aa-4051-a1c5-aad56a91122d.png)  
 - 설치한 Provisioner를 storageclass에 등록 : efs-storageclass.yml  
@@ -170,7 +170,7 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
   ![DADA5790-9FE2-4B64-A467-6A465F2A9C6E](https://user-images.githubusercontent.com/110404800/217438727-33f21ca4-16ed-4e78-9f2f-98ccf382f062.png)  
   ![19FB2DB4-80CB-4914-BD30-AD511EE8485A](https://user-images.githubusercontent.com/110404800/217439150-0f95b71b-5fe2-4e81-99c4-979e32169528.png)  
 
-## 13. **Loggregation / Monitoring**
+## 13. **Monitoring**
 - 모니터링을 위해 prometheus와 grafana를 설치  
   ![1A5A1270-6C97-4B0D-9ED9-525C6C5B6A99](https://user-images.githubusercontent.com/110404800/217410342-6c299363-00f7-4d18-98c4-aa5fe503b3cc.png)  
 - prometheus page로 이동하여 destination service 가 reservation로 request 한것을 query  
