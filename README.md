@@ -141,6 +141,10 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 
 
 ## 10. **Persistence Volume/ConfigMap/Secret**
+- PVC(PersistentVolumeClaim) 생성 : volume-pvc.yml  
+  ![ABB713D9-0133-439C-9CA6-EF4992C06C4D](https://user-images.githubusercontent.com/110404800/217432594-3451f649-6f89-4e66-bc56-246b175ecef8.png)  
+- Pod 적용  
+  ![4649C041-7917-466F-9C78-00BE4042DB69](https://user-images.githubusercontent.com/110404800/217432720-ecef4533-4f3a-4f6c-8860-8f3eb607077a.png)  
 
 ## 11. **Self-healing (liveness probe)**
 
