@@ -100,10 +100,9 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
   ![image](https://user-images.githubusercontent.com/110404800/217187118-1d2ca7c5-2e12-4740-b3f4-8defac86f7a7.png)  
   ![image](https://user-images.githubusercontent.com/110404800/217408607-f4baa1e9-c67b-4e89-8d0c-386209baf89b.png)  
 - gateway external-ip 확인  
-  ![image](https://user-images.githubusercontent.com/110404800/217412112-dc790de6-54fb-4d90-b165-e810dd73cdbd.png)  
-- 예약 신청 및 확인  
-  
-  
+  ![image](https://user-images.githubusercontent.com/110404800/217431916-10d5349d-e530-4316-8a68-10df046d35ae.png)  
+- 예약 확인  
+  ![image](https://user-images.githubusercontent.com/110404800/217431842-89049c0e-2e08-4f66-8022-96e25701e649.png)
   
 
 ## 8. **Autoscale (HPA)**
