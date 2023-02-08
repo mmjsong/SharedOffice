@@ -68,12 +68,16 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 
 
 ## **2. CQRS**  
-- Table 모델링 및 CQRS
+- Table 모델링 및 CQRS  
   ![image](https://user-images.githubusercontent.com/110404800/217440968-b277d362-9f52-46b9-b813-524b8994c569.png)  
   ![image](https://user-images.githubusercontent.com/110404800/217441060-02024b1e-e177-42e3-9a51-2f5321f76afa.png)  
   ![image](https://user-images.githubusercontent.com/110404800/217441096-4a6f0c99-d49e-4ad2-b1e5-7eef288bce28.png)  
 
-## 3. **Compensation & Correlation**  
+## 3. **Correlation**  
+- 데이터 일관성 처리를 rsvId를 corrleation key로 설정  
+  ![image](https://user-images.githubusercontent.com/110404800/217442829-df3b341b-d44f-4f75-affe-3e372cd17250.png)  
+  ![image](https://user-images.githubusercontent.com/110404800/217442756-1616d4e1-8519-4eba-a169-50d49a6370a5.png)  
+  
 
   
 # 운영
