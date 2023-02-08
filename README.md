@@ -94,11 +94,11 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 - Kubernetes용 Service.yaml에서 Gateway 엔드포인트 확인 및 서비스 생성  
   ![image](https://user-images.githubusercontent.com/110404800/217284942-36a5db28-47b5-482e-bb88-2e0ffe2f49ad.png)
 - Service 및 API gateway 확인  
-  ![image](https://user-images.githubusercontent.com/110404800/217299521-84b45498-f2e6-4d2d-b4c2-1bd572c15936.png)  
+  ![image](https://user-images.githubusercontent.com/110404800/217407469-67899586-6d73-48d4-8827-1570ebae5c1e.png)  
+- gateway를 통해서 서비스가 정상 조회 됨을 확인  
+  ![image](https://user-images.githubusercontent.com/110404800/217407598-1d5c5bff-b9a1-4d95-9377-e50da12449bc.png)  
   
   
-  
-
 ## 7. **Deploy / Pipeline**
 
 ## 8. **Autoscale (HPA)**
